@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../src/css/style.css">
+    <title>Sten, Sax, Påse</title>
+    
+   
+
+</head>
+<body>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+    <form>
+       <label for="nameInput">Ange ditt namn: </label>
+       <input type="text" id="nameInput" placeholder="Ange ditt namn">
+       <button type="button"   id="start-button">Starta spelet</button>
+      
+</form>
+ <span id="playerInfo"></span> 
+
+<div id="result"></div>
+<div id="highscore-container">
+     
+    <ol id="highscore-list"></ol>
+       
+</div>      
+<h1>Highscores</h1>
+<h1 id="fetchHighscoresButton"></h1>
+<ul id="highscore-list" id="playerInfo">
+        <!-- Här kommer highscore-data att fyllas in med JavaScript -->
+</ul>
+ 
+    <div class="score-board">
+        <div id="user-label" class="badge">You</div>
+        <div id="computer-label" class="badge">Comp</div>
+        <span id="user-score">0</span> : <span id="computer-score">0</span>
+    </div>
+    <p id="player-choice">Spelarens val: </p>
+<img id="player-choice-img" src="../../src/modules/jpeg/Rock.svg" alt="Spelarens valbild">
+
+<p id="computer-choice">Datorns val: </p>
+<img id="computer-choice-img" src="../../src/modules/jpeg/Rock.svg" alt="Datorns valbild">
+    
+    <div class="result">
+        <p> Må bästa spelaren Vinna!</p>
+    </div>
+    
+    <div class="choices">
+        <div id="rock" class="choice">
+            <img width="48" height="48" text="sten" src="../../src/modules/jpeg/Rock.svg"/>
+        </div>
+        <div id="paper" class="choice">
+            <img width="48" height="48" text="Påse" src="../../src/modules/jpeg/Paper.svg"/>
+        </div>
+        <div id="scissors" class="choice">
+            <img width="48" height="48"  text="Sax"src="../../src/modules/jpeg/Scissors.svg"/>
+        </div>
+        <p id="action-message">Make your move.</p>
+    </div>
+    <button type="button"   id="restart-button">Starta om spelet</button>
+   <!--  <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+   <script  type="module" src="../../src/modules/main.js"></script>
+  
+
+
+
+    
+</body>
+</html>

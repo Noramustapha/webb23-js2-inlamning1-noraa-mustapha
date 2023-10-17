@@ -1,0 +1,15 @@
+{
+  "name": "tes",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "parcel ./frontend/src/modules/index.html",
+    "build": "parcel build ./frontend/src/modules/index.html --dist-dir docs --public-url ./",
+    "clean": "del-cli ./.parcel-cache ./docs .dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.9.3"
+  }
+}
